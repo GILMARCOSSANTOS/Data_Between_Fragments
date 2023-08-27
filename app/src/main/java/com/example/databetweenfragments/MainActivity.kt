@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity(), Communicator {
     private fun toGoToFragment(){
         val fragment001 = Fragment001()
         supportFragmentManager.beginTransaction().replace(R.id.container_id, fragment001).commit()
+
+        /* Teste */
     }
 
     override fun passDataCommunicator(passText: String) {
