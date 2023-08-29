@@ -8,20 +8,29 @@
     android:orientation="vertical"
     tools:context=".Fragment001">
 
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="450dp"
+        android:text="Fragment001"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginTop="150dp"
         android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_editText_id"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtVw_showText_fragment001_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:inputType="text"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/enter_btn_id"
