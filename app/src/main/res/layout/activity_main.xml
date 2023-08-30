@@ -5,7 +5,7 @@
     android:id="@+id/container_id"
     android:background="@color/design_default_color_error"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ActivityMain">
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"

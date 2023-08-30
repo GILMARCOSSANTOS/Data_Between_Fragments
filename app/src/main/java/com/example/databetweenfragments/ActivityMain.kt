@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentTransaction
 
-class MainActivity : AppCompatActivity(), Communicator {
+class ActivityMain : AppCompatActivity(), Communicator {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,11 +16,9 @@ class MainActivity : AppCompatActivity(), Communicator {
         toGoToFragment()
     }
 
-    private fun toGoToFragment(){
+    private fun toGoToFragment() {
         val fragment001 = Fragment001()
         supportFragmentManager.beginTransaction().replace(R.id.container_id, fragment001).commit()
-
-        /* Teste */
     }
 
     override fun passDataCommunicator(passText: String) {
