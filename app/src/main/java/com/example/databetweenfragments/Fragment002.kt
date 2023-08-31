@@ -14,7 +14,6 @@ class Fragment002 : Fragment() {
 
     private var inputText: String = ""
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

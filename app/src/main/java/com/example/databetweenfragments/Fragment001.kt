@@ -23,12 +23,14 @@ class Fragment001 : Fragment() {
     ): View? {
         val rootView = inflater.inflate(R.layout.fragment_001, container, false)
 
+        /* Instância do Comunicador */
         communicator = requireActivity() as Communicator
 
-        val enterBtn = rootView.findViewById<MaterialButton>(R.id.enter_btn_id)
-        val inputEditText = rootView.findViewById<MaterialTextView>(R.id.txtVw_showText_fragment001_id)
-        enterBtn.setOnClickListener {
-            communicator.passDataCommunicator(inputEditText.text.toString())
+        /* Envia o Conteúdo do TextView para o Comunicador */
+        val butttonEnter = rootView.findViewById<MaterialButton>(R.id.enter_btn_id)
+        val textViewShow = rootView.findViewById<MaterialTextView>(R.id.txtVw_showText_fragment001_id)
+        butttonEnter.setOnClickListener {
+            communicator.passDataCommunicator(textViewShow.text.toString())
         }
 
         return rootView
@@ -37,11 +39,15 @@ class Fragment001 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        globalVariablesEscope()
-        textViewShow.text = "G. Santos"
+        globalVariablesScope()
+        myText()
     }
 
-    private fun globalVariablesEscope(): View {
+    private fun myText(){
+        textViewShow.text = "G... Santos"
+    }
+
+    private fun globalVariablesScope(): View {
         textViewShow = view?.findViewById(R.id.txtVw_showText_fragment001_id)!!
         return view as View
     }
