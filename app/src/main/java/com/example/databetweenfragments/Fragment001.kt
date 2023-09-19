@@ -28,7 +28,9 @@ class Fragment001 : Fragment() {
 
         /* Envia o Conteúdo do TextView para o Comunicador */
         val butttonEnter = rootView.findViewById<MaterialButton>(R.id.enter_btn_id)
+
         val textViewShow = rootView.findViewById<MaterialTextView>(R.id.txtVw_showText_fragment001_id)
+
         butttonEnter.setOnClickListener {
             communicator.passDataCommunicator(textViewShow.text.toString())
         }
@@ -44,7 +46,7 @@ class Fragment001 : Fragment() {
     }
 
     private fun myText(){
-        textViewShow.text = "G... Santos"
+        textViewShow.text = "CPF = 001.001.001-001"
     }
 
     private fun globalVariablesScope(): View {

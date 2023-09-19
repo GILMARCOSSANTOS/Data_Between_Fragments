@@ -13,12 +13,19 @@ class ActivityMain : AppCompatActivity(), Communicator {
 
         /* Execute Functions: */
         titleCenterActionBar()
-        toGoToFragment()
+        toGoToFragment001()
     }
 
-    private fun toGoToFragment() {
+    private fun toGoToFragment001() {
+
         val fragment001 = Fragment001()
         supportFragmentManager.beginTransaction().replace(R.id.container_id, fragment001).commit()
+    }
+
+    private fun cpf(){
+        val cpf001 = "CPF 001 = 000.000.000-01"
+        val cpf002 = "CPF 002 = 000.000.000-02"
+        val cpf003 = "CPF 003 = 000.000.000-03"
     }
 
     override fun passDataCommunicator(passText: String) {
