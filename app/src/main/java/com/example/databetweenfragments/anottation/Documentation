@@ -1,6 +1,7 @@
 ▬▬▬ Branch Master:
 
 ▬▬▬ Branch001:
-• Essa Branch envia apenas uma informação da Activity para as Fragments.
+• Essa Branch envia apenas uma informação da Activity para as Fragments usando a Classe Communicator.
 
 ▬▬▬ Branch002:
+• Essa Branch várias informações da Activity para as Fragments usando o ViewModel.
