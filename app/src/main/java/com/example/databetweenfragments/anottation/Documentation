@@ -1,0 +1,8 @@
+▬▬▬ Branch Master:
+• Envia Dados de um EditText na Fragment001 para a Fragment002.
+
+▬▬▬ Branch Branch001:
+• Envia Dados da Fragment001 para a Fragment002 usando a Classe Communicator.
+
+▬▬▬ Branch Branch002:
+• Envia vários Dados da Activity para várias Fragments.
