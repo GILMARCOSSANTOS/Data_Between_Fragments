@@ -26,7 +26,7 @@ class ActivityMain : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         /* Execute Functions: */
-       // cpf()
+         cpf()
         toGoToFragments()
         titleCenterActionBar()
     }
@@ -44,12 +44,7 @@ class ActivityMain : AppCompatActivity() {
         buttonFragment001.setOnClickListener {
             if (buttonFragment001.isClickable) {
 
-                val cpf001xxx = "sdsdsxxx001"
-                viewModelCommunicator.setData(cpf001xxx)
-//                viewModelCommunicator.setData(cpf002)
-//                viewModelCommunicator.setData(cpf003)
-//                viewModelCommunicator.setData(cpf004)
-//                viewModelCommunicator.setData(cpf005)
+                viewModelCommunicator.sendDataToFragment001(cpf001, cpf002, cpf003)
 
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.containerFragment_activityMain_id, fragment001).commit()
