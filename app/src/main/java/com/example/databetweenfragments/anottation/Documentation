@@ -1,4 +1,5 @@
 ▬▬▬ Branch Master:
+• Envia Dados de EditText para Fragment.
 
 ▬▬▬ Branch001:
 • Essa Branch envia apenas uma informação da Activity para as Fragments através da Classe Communicator.

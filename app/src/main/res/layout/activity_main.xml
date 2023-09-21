@@ -1,19 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/container_id"
-    android:background="@color/design_default_color_error"
     android:layout_height="match_parent"
-    tools:context=".ActivityMain">
+    android:layout_gravity="center"
+    android:background="@color/design_default_color_error"
+    tools:context=".view.ActivityMain">
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtVw_fragmentName_activityMan_id"
         android:layout_width="match_parent"
-        android:text="ActivityHome"
-        android:textSize="35sp"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="550dp"
+        android:text="ActivityHome"
         android:textColor="@color/white"
-        android:layout_height="wrap_content"/>
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/containerFragment_activityMain_id"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtVw_fragmentName_activityMan_id" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_fragment001_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="Fragment 001"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerFragment_activityMain_id" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_fragment002_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="Fragment 002"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bttn_fragment001_id" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bttn_fragment003_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="Fragment 003"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bttn_fragment002_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
