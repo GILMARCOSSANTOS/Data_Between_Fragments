@@ -12,6 +12,11 @@ import com.google.android.material.textview.MaterialTextView
 
 class Fragment001 : Fragment() {
 
+    /**
+     * NOTE:
+     * ▬ CRIA INTÂNCIA DA CLASSE VIEW MODEL.
+     */
+
     private val viewModelCommunicator: ViewModelCommunicator by activityViewModels()
 
     override fun onCreateView(
@@ -29,25 +34,15 @@ class Fragment001 : Fragment() {
 
     private fun receiveDataViewModel() {
 
-
-
-
-//        viewModelCommunicator.data.observe(viewLifecycleOwner) { cpf ->
-//            // Atualiza as TextViews com os novos valores
-//            val textViewCpf001 = view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber001_fragment001_id)
-//            textViewCpf001?.text = cpf
-//
-//            val textViewCpf002 = view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber002_fragment001_id)
-//            textViewCpf002?.text = cpf
-//
-//            val textViewCpf003 = view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber003_fragment001_id)
-//            textViewCpf003?.text = cpf
-//        }
+        /**
+         * NOTE:
+         * ▬ RECEBE OS DADOS DE CPF 001 + CPF 002 + CPF 003 E POPULA AS TEXTVIEWS.
+         */
 
         val textViewCpf001 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber001_fragment001_id)
 
-        viewModelCommunicator.data001.observe(viewLifecycleOwner) {
+        viewModelCommunicator.cpf001Fragment001.observe(viewLifecycleOwner) {
             if (textViewCpf001 != null) {
                 textViewCpf001.text = it
             }
@@ -55,7 +50,7 @@ class Fragment001 : Fragment() {
 
         val textViewCpf002 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber002_fragment001_id)
-        viewModelCommunicator.data002.observe(viewLifecycleOwner) {
+        viewModelCommunicator.cpf002Fragment001.observe(viewLifecycleOwner) {
             if (textViewCpf002 != null) {
                 textViewCpf002.text = it
             }
@@ -63,7 +58,7 @@ class Fragment001 : Fragment() {
 
         val textViewCpf003 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber003_fragment001_id)
-        viewModelCommunicator.data003.observe(viewLifecycleOwner) {
+        viewModelCommunicator.cpf003Fragment001.observe(viewLifecycleOwner) {
             if (textViewCpf003 != null) {
                 textViewCpf003.text = it
             }
