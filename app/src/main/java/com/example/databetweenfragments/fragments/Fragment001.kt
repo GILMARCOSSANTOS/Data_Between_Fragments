@@ -13,10 +13,11 @@ import com.google.android.material.textview.MaterialTextView
 class Fragment001 : Fragment() {
 
     /**
-     * NOTE:
+     * Note:
      * ▬ CRIA INTÂNCIA DA CLASSE VIEW MODEL.
      */
 
+    /* Dependência = implementation 'androidx.fragment:fragment-ktx:1.1.0' */
     private val viewModelCommunicator: ViewModelCommunicator by activityViewModels()
 
     override fun onCreateView(
@@ -42,7 +43,7 @@ class Fragment001 : Fragment() {
         val textViewCpf001 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber001_fragment001_id)
 
-        viewModelCommunicator.cpf001Fragment001.observe(viewLifecycleOwner) {
+        viewModelCommunicator.keyCpf001Fragment001.observe(viewLifecycleOwner) {
             if (textViewCpf001 != null) {
                 textViewCpf001.text = it
             }
@@ -50,7 +51,7 @@ class Fragment001 : Fragment() {
 
         val textViewCpf002 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber002_fragment001_id)
-        viewModelCommunicator.cpf002Fragment001.observe(viewLifecycleOwner) {
+        viewModelCommunicator.KeyCpf002Fragment001.observe(viewLifecycleOwner) {
             if (textViewCpf002 != null) {
                 textViewCpf002.text = it
             }
@@ -58,7 +59,7 @@ class Fragment001 : Fragment() {
 
         val textViewCpf003 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber003_fragment001_id)
-        viewModelCommunicator.cpf003Fragment001.observe(viewLifecycleOwner) {
+        viewModelCommunicator.KeyCpf003Fragment001.observe(viewLifecycleOwner) {
             if (textViewCpf003 != null) {
                 textViewCpf003.text = it
             }

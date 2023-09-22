@@ -16,6 +16,8 @@ class Fragment002 : Fragment() {
      * NOTE:
      * ▬ CHAMA A CLASSE VIEWMODEL.
      */
+
+    /* Dependência = implementation 'androidx.fragment:fragment-ktx:1.1.0' */
     private val viewModelCommunicator: ViewModelCommunicator by activityViewModels()
 
     override fun onCreateView(
@@ -41,7 +43,7 @@ class Fragment002 : Fragment() {
         val textViewCpf004 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber_fragment002_id)
 
-        viewModelCommunicator.cpf004Fragment002.observe(viewLifecycleOwner) {
+        viewModelCommunicator.keyCpf004Fragment002.observe(viewLifecycleOwner) {
             if (textViewCpf004 != null) {
                 textViewCpf004.text = it
             }

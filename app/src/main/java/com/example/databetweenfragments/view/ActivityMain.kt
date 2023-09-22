@@ -13,13 +13,12 @@ import com.google.android.material.button.MaterialButton
 
 class ActivityMain : AppCompatActivity() {
 
-    /* Dependência = implementation 'androidx.fragment:fragment-ktx:1.1.0' */
-
     /**
-     * NOTE:
+     * Note:
      * ▬ VARIÁVEIS GLOBAIS.
      * ▬ INSTÂNCIA DA CLASSE VIEW MODEL.
      */
+    /* Dependência = implementation 'androidx.fragment:fragment-ktx:1.1.0' */
     private val viewModelCommunicator: ViewModelCommunicator by viewModels()
     private lateinit var cpf001: String
     private lateinit var cpf002: String
@@ -85,11 +84,11 @@ class ActivityMain : AppCompatActivity() {
          * ▬ DADOS PARA SEREM ENVIADOS PARA AS FRAGMENTS.
          * • CPF'S DE ESCOPO GLOBAL.
          */
-        cpf001 = "CPF 001 = 000.000.000-01"
-        cpf002 = "CPF 002 = 000.000.000-02"
-        cpf003 = "CPF 003 = 000.000.000-03"
-        cpf004 = "CPF 004 = 000.000.000-04"
-        cpf005 = "CPF 005 = 000.000.000-05"
+        cpf001 = "CPF 001 = 001.001.001-01"
+        cpf002 = "CPF 002 = 002.002.002-02"
+        cpf003 = "CPF 003 = 003.003.003-03"
+        cpf004 = "CPF 004 = 004.004.004-04"
+        cpf005 = "CPF 005 = 005.005.005-05"
     }
 
     private fun titleCenterActionBar() {

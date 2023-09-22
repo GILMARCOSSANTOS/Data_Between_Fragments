@@ -16,8 +16,9 @@ class Fragment003 : Fragment() {
     /**
      * NOTE:
      * ▬ CHAMA A CLASSE VIEWMODEL.
+     * •
      */
-
+    /* Dependência = implementation 'androidx.fragment:fragment-ktx:1.1.0' */
     private val viewModelCommunicator: ViewModelCommunicator by activityViewModels()
 
     override fun onCreateView(
@@ -30,20 +31,20 @@ class Fragment003 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       receiveDataModel()
+        receiveDataModel()
     }
 
-    private fun receiveDataModel(){
+    private fun receiveDataModel() {
 
         /**
-         * NOTE:
+         * NOTE:         *
          * ▬ RECEBE OS DADOS DE CPF 004 + E POPULA A TEXTVIEW.
          */
 
         val textViewCpf001 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber001_fragment003_id)
 
-        viewModelCommunicator.cpf001Fragment003.observe(viewLifecycleOwner) {
+        viewModelCommunicator.keyCpf001Fragment003.observe(viewLifecycleOwner) {
             if (textViewCpf001 != null) {
                 textViewCpf001.text = it
             }
@@ -52,7 +53,7 @@ class Fragment003 : Fragment() {
         val textViewCpf005 =
             view?.findViewById<MaterialTextView>(R.id.txtVw_cpfNumber005_fragment003_id)
 
-        viewModelCommunicator.cpf005Fragment003.observe(viewLifecycleOwner) {
+        viewModelCommunicator.keyCpf005Fragment003.observe(viewLifecycleOwner) {
             if (textViewCpf005 != null) {
                 textViewCpf005.text = it
             }

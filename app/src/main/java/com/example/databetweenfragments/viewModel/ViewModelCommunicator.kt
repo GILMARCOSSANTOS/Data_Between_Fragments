@@ -8,31 +8,30 @@ class ViewModelCommunicator : ViewModel() {
     /**
      * NOTE:
      * ▬ CLASSE VIEWMODEL.
-     */
+     **/
 
-
-    val cpf001Fragment001 = MutableLiveData<String>()
-    val cpf002Fragment001 = MutableLiveData<String>()
-    val cpf003Fragment001 = MutableLiveData<String>()
-    val cpf004Fragment002 = MutableLiveData<String>()
-    val cpf001Fragment003 = MutableLiveData<String>()
-    val cpf005Fragment003 = MutableLiveData<String>()
+    val keyCpf001Fragment001 = MutableLiveData<String>()
+    val KeyCpf002Fragment001 = MutableLiveData<String>()
+    val KeyCpf003Fragment001 = MutableLiveData<String>()
 
     fun sendDataToFragment001(cpf1: String, cpf2: String, cpf3: String) {
 
-        cpf001Fragment001.value = cpf1
-        cpf002Fragment001.value = cpf2
-        cpf003Fragment001.value = cpf3
+        keyCpf001Fragment001.value = cpf1
+        KeyCpf002Fragment001.value = cpf2
+        KeyCpf003Fragment001.value = cpf3
     }
 
+    val keyCpf004Fragment002 = MutableLiveData<String>()
     fun sendDataToFragment002(cpf4: String) {
 
-        cpf004Fragment002.value = cpf4
+        keyCpf004Fragment002.value = cpf4
     }
 
+    val keyCpf001Fragment003 = MutableLiveData<String>()
+    val keyCpf005Fragment003 = MutableLiveData<String>()
     fun sendDataToFragment003(cpf1: String, cpf5: String) {
 
-        cpf001Fragment003.value = cpf1
-        cpf005Fragment003.value = cpf5
+        keyCpf001Fragment003.value = cpf1
+        keyCpf005Fragment003.value = cpf5
     }
 }
